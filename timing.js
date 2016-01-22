@@ -22,3 +22,4 @@ while (i < 100000000) {
 console.log('E');
 
 // What is the order in which the letters are output?
+// Extra Credit: What is the "timeline" of each letter being displayed?

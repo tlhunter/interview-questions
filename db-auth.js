@@ -1,4 +1,4 @@
-// Can you spot the bug?
+// Can you spot the bug? How would you fix it?
 
 var database = require('database_connection.js');
 var encrypt = require('sha1_encryptor.js');
