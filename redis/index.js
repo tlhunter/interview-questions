@@ -6,13 +6,21 @@ var express = require('express'),
 // TODO: Add redis methods to each route handler
 // TODO: Add error handling
 
-// Send hello message, increment counter, and count of visitors
+/**
+ * Increment user counter in Redis
+ * Send an object containing greeting: "Hello World", and count: COUNT VALUE
+ * Increment the count value by one
+ */
 app.get('/', function(req, res) {});
 
-// Get count of all visitors
+/**
+ * Return object containing count: COUNT VALUE
+ */
 app.get('/count', function(req, res) {});
 
-// Manually set value
+/**
+ * Manually set the value of the user count, and return object containing status: 'OK'
+ */
 app.get('/cheat/:count', function(req, res) {
 	// req.params.count;
 });
