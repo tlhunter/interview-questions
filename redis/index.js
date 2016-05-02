@@ -2,6 +2,7 @@ var r = require("redis"),
 		redis = r.createClient();
 var express = require('express'),
 		app = express();
+var REDIS_COLLECTION = 'visit-counter';
 
 // TODO: Add redis methods to each route handler
 // TODO: Add error handling
@@ -29,7 +30,8 @@ app.listen(5000, function () {
   console.log('listening...');
 });
 
-// res.status(200).send();		// Send data back to client
-// redis.set(NAME, VALUE, CB) // Set Value
-// redis.get(NAME, CB)				// Get Value
-// redis.incr(NAME, CB)				// Increment Value by one
+// NOTES:
+// res.status(200).send();								// Sends data back to client
+// redis.set(REDIS_COLLECTION, VALUE, CB) // Set Value, CB(err)
+// redis.get(REDIS_COLLECTION, CB)				// Get Value CB(err, val)
+// redis.incr(REDIS_COLLECTION, CB)				// Increment Value by one CB(err, newVal)
