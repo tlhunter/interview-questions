@@ -1,0 +1,59 @@
+You want to build an API which returns a data about all the restaurants in a state
+
+
+http://my-api/?state=CA
+
+
+Restaurant API gives data about restaurants
+
+200ms
+http://restaurant-api/?state=CA
+[
+  {
+    id: 1,
+    name: "Bobs Burgers",
+    cityId: 20,
+    cuisineId: 30
+  },
+  {
+    id: 2,
+    name: "Joes Burrito Barn",
+    cityId: 21,
+    cuisineId: 30
+  }
+]
+
+
+City API gives data about cities
+
+100ms
+http://city-api/?ids=20,21
+[
+  {
+    id: 20,
+    name: "San Francisco"
+  },
+  {
+    id: 21,
+    name: "Oakland"
+  }
+]
+
+Cuisine API gives data about cuisines
+
+50ms
+http://cuisine-api/?ids=30,31
+[
+  {
+    id: 30,
+    name: "Burgers"
+  },
+  {
+    id: 30,
+    name: "Burritos"
+  }
+]
+
+How would you handle requests?
+How long does it take to reply?
+One day the service is 100ms slower, how do you find out why?
