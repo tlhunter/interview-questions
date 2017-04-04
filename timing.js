@@ -1,14 +1,19 @@
-setTimeout(function() {
+// What is the order in which the letters are output?
+// Extra Credit: Approx. how long before each letter is displayed?
+
+// Order:
+
+setTimeout(() => {
   console.log('A');
 }, 0);
 
 console.log('B');
 
-setTimeout(function() {
+setTimeout(() => {
   console.log('C');
 }, 0);
 
-setTimeout(function() {
+setTimeout(() => {
   console.log('D');
 }, 100);
 
@@ -20,6 +25,3 @@ while (i < 100000000) {
 }
 
 console.log('E');
-
-// What is the order in which the letters are output?
-// Extra Credit: Approx. how long before each letter is displayed?

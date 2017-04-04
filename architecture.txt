@@ -1,4 +1,10 @@
-You want to build an API which returns a data about all the restaurants in a state
+You want to build an API which returns a data about all the restaurants in a state.
+
+How would you handle requests?
+How long does it take to reply?
+What modules or patterns would you use to manage the dependencies?
+Diagram the network traffic on a whiteboard.
+One day the service is 100ms slower, how do you find out why?
 
 
 http://my-api/?state=CA
@@ -53,7 +59,3 @@ http://cuisine-api/?ids=30,31
     name: "Burritos"
   }
 ]
-
-How would you handle requests?
-How long does it take to reply?
-One day the service is 100ms slower, how do you find out why?
